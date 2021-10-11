@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+
+.body {
+  padding: 20px;
+  background: var(--pink);
+  border-radius: 30px;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input input {
+  width: 90%;
+  height: 50px;
+  margin: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--red);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Gamja Flower", cursive;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.loginBtn {
+  width: 90%;
+  border-style: none;
+  background: var(--red);
+  height: 70px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.loginBtn:hover {
+  background: var(--darkYellow);
+}
+
+.loginTxt {
+  color: var(--brown);
+  text-decoration: none;
+  font-family: "Gamja Flower", cursive;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.etc {
+  display: flex;
+  justify-content: space-around;
+}
+
+.idPw,
+.join {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--brown);
+  font-family: "Gamja Flower", cursive;
+}

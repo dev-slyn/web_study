@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+.loginPage {
+  display: table-cell;
+  vertical-align: middle;
+  background: var(--pink);
+  padding: 20px;
+  background: var(--pink);
+  border-radius: 30px;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Gamja Flower", cursive;
+}
+
+.loginForm {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.join {
+  text-align: center;
+  font-size: 50px;
+}
+
+.input {
+  display: flex;
+  align-content: center;
+}
+
+.icon {
+  height: 100%;
+  font-size: 50px;
+  color: var(--red);
+  margin-right: 20px;
+}
+
+.input input {
+  width: 90%;
+  height: 50px;
+  margin: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--red);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Gamja Flower", cursive;
+}
+
+.input input:focus {
+  outline: none;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.joinBtn {
+  width: 100%;
+  border-style: none;
+  background: var(--red);
+  height: 70px;
+  font-size: 30px;
+  border-radius: 5px;
+  font-family: "Gamja Flower", cursive;
+}
+
+.joinBtn:hover {
+  background: var(--darkYellow);
+}
+
+.alreadyJoin {
+  text-align: center;
+}
