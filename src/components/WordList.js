@@ -1,10 +1,21 @@
-import { useState } from "react";
-import styles from "../css/WordListSection.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from 'react';
+import styles from '../css/WordList.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 export default function WordList() {
+  const [wordList, setWordList] = useState([]);
   const [countList, setCountList] = useState([0]);
+
+  useEffect(() => {
+    fetch('http://localhost:3001/lists')
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setWordList(data);
+      });
+  }, []);
 
   const onAddSection = () => {
     setIsOpenInputBox(false);
@@ -20,15 +31,14 @@ export default function WordList() {
   const [isOpenInputBox, setIsOpenInputBox] = useState(false);
   const [isOpendBtn, setIsOpendBtn] = useState(true);
   const [isOpenInput, setIsOpenInput] = useState(false);
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState('');
 
-  let count = 0;
   const onTextChange = (e) => {
     setInput(e.target.value);
   };
 
   const onCheckEnter = (e) => {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       onSubmit();
     }
   };
@@ -46,29 +56,29 @@ export default function WordList() {
   }
 
   return (
-    <div>
-      <div countList={countList}>
+    <div >
+      <div>
+        <div className={styles.wordList}>{wordList.name}dd</div>
+      </div>
+      <div  countList={countList}>
         {countList &&
           countList.map((item, i) => (
             <div>
               <div onKeyPress={onCheckEnter}>
                 {isOpenInputBox && (
                   <input
-                    key={count++}
                     onSubmit={inputSubmit}
                     value={input}
                     onChange={onTextChange}
                     type="text"
                   />
                 )}
-                {console.log(count)}
               </div>
               <div>{isOpenInput && input}</div>
               <div>
                 {isOpendBtn && (
-                  <div className={styles.addBtn}>
+                  <div onClick={toggle} className={styles.addBtn}>
                     <FontAwesomeIcon
-                      onClick={toggle}
                       className={styles.plusIcon}
                       icon={faPlus}
                     />

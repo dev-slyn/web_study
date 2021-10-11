@@ -1,0 +1,88 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "name": "jlpt n1"
+    },
+    {
+      "id": 3,
+      "name": "hsk 3"
+    },
+    {
+      "id":2,
+      "name": "토익"
+    }
+  ],
+  "words": [
+    {
+      "id": 1,
+      "name": "jlpt n1",
+      "eng": "book",
+      "kor": "책",
+      "isDone": false
+    },
+    {
+      "id": 3,
+      "name": "jlpt n1",
+      "eng": "car",
+      "kor": "자동차",
+      "isDone": false
+    },
+    {
+      "id": 5,
+      "name": "hsk 3",
+      "eng": "school",
+      "kor": "학교",
+      "isDone": false
+    },
+    {
+      "id": 6,
+      "name": "hsk 3",
+      "eng": "pencil",
+      "kor": "연필",
+      "isDone": false
+    },
+    {
+      "name": "hsk 3",
+      "eng": "window",
+      "kor": "창문",
+      "isDone": false,
+      "id": 7
+    },
+    {
+      "name": "hsk 3",
+      "eng": "house",
+      "kor": "집",
+      "isDone": false,
+      "id": 8
+    },
+    {
+      "name": "hsk 3",
+      "eng": "mouse",
+      "kor": "쥐",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "name": "hsk 3",
+      "eng": "monkey",
+      "kor": "원숭이",
+      "isDone": false,
+      "id": 10
+    },
+    {
+      "name": "토익",
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": false,
+      "id": 11
+    },
+    {
+      "name": "토익",
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": false,
+      "id": 12
+    }
+  ]
+}

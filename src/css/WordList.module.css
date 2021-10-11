@@ -7,10 +7,12 @@
   justify-content: center;
   align-items: center;
   color: white;
-  position: absolute;
-  bottom: 0;
   right: 50%;
   left: 50%;
   margin-bottom: 20px;
   font-size: 50px;
+}
+
+.wordList{
+  background: black;
 }
